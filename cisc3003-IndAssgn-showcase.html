@@ -2,64 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Showcase - JIANGJINHONG Portfolio</title>
-    <style>
-        :root { --primary: #2563eb; --dark: #1f2937; --light: #f3f4f6; --white: #ffffff; }
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-        body { color: var(--dark); line-height: 1.6; background-color: var(--light); display: flex; flex-direction: column; min-height: 100vh; }
-        a { text-decoration: none; color: inherit; }
-        
-        header { background: var(--white); box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
-        nav { display: flex; justify-content: space-between; align-items: center; padding: 1rem 5%; max-width: 1200px; margin: auto; flex-wrap: wrap; }
-        .logo { font-size: 1.5rem; font-weight: bold; color: var(--primary); }
-        .nav-links { list-style: none; display: flex; gap: 1.5rem; flex-wrap: wrap; }
-        .nav-links a { font-weight: 500; transition: color 0.3s; }
-        .nav-links a:hover, .nav-links a.active { color: var(--primary); }
-        
-        main { flex: 1; padding: 3rem 5%; max-width: 1000px; margin: auto; width: 100%; }
-        h1.page-title { text-align: center; margin-bottom: 3rem; color: var(--dark); font-size: 2.5rem; border-bottom: 3px solid var(--primary); display: inline-block; padding-bottom: 0.5rem; left: 50%; position: relative; transform: translateX(-50%); }
-        
-        .showcase-container { background: var(--white); padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); text-align: center; }
-        .media-placeholder { width: 100%; max-width: 800px; height: 400px; background: #e5e7eb; margin: 0 auto 2rem auto; display: flex; align-items: center; justify-content: center; border-radius: 8px; border: 2px dashed #9ca3af; color: #6b7280; font-size: 1.2rem; }
-        .showcase-container h2 { color: var(--primary); margin-bottom: 1rem; }
-        .showcase-container p { color: #4b5563; max-width: 700px; margin: auto; }
-        
-        footer { background: var(--dark); color: var(--white); text-align: center; padding: 1.5rem; margin-top: auto; }
-        
-        @media (max-width: 768px) { nav { flex-direction: column; gap: 1rem; } .media-placeholder { height: 250px; } }
-    </style>
+    <title>Showcase - JIANGJINHONG</title>
+    <link rel="stylesheet" href="cisc3003-IndAssgn-DC228883-showcase.css">
 </head>
 <body>
-
     <header>
         <nav>
             <div class="logo">JIANGJINHONG</div>
             <ul class="nav-links">
-                <li><a href="cisc3003-IndAssgn-home.html">Home</a></li>
-                <li><a href="cisc3003-IndAssgn-qualification.html">Qualifications</a></li>
-                <li><a href="cisc3003-IndAssgn-projects.html">Projects</a></li>
-                <li><a href="cisc3003-IndAssgn-showcase.html" class="active">Showcase</a></li>
-                <li><a href="cisc3003-IndAssgn-summary.html">Summary</a></li>
+                <li><a href="CISC3003-IndAssgn-DC228883.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="summary.html">Summary</a></li>
+                <li><a href="showcase.html">Showcase</a></li>
+                <li><a href="qualification.html">Qualification</a></li>
             </ul>
         </nav>
     </header>
-
-    <main>
-        <h1 class="page-title">Featured Showcase</h1>
-        
-        <div class="showcase-container">
-            <div class="media-placeholder">
-                [ Featured Video or High-Res Image Placeholder ]
-            </div>
-            <h2>CISC3003 Web Development Assignment</h2>
-            <p>This section highlights my best work. The portfolio itself serves as a demonstration of my ability to structure HTML documents, apply CSS styling for responsive design, and create a cohesive user experience across multiple web pages.</p>
+    <div class="gallery">
+        <h2>My Work Showcase</h2>
+        <div class="image-placeholder">
+            [ Project Image / Screenshot Placeholder ]
         </div>
-    </main>
-
-    <footer>
-        <p>&copy; 2026 JIANGJINHONG (Student ID: DC228883). CISC3003 Individual Assignment.</p>
-    </footer>
-
+        <p>Here are some visual examples of my recent academic and personal projects.</p>
+    </div>
 </body>
 </html>
