@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Showcase</title>
+    <!-- <link rel="stylesheet" href="css/cisc3003-IndAssgn-showcase.css"> -->
+    <style>
+        :root { --primary: #2563eb; --dark: #1f2937; --white: #ffffff; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; }
+        body { background: #f9fafb; color: var(--dark); padding-top: 80px; }
+        header { background: var(--white); box-shadow: 0 2px 5px rgba(0,0,0,0.1); position: fixed; width: 100%; top: 0; padding: 1rem 5%; display: flex; justify-content: space-between; }
+        .container { max-width: 1000px; margin: 2rem auto; padding: 0 5%; }
+        h1 { text-align: center; color: var(--primary); margin-bottom: 2rem; }
+        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+        .gallery img { width: 100%; height: 200px; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s; }
+        .gallery img:hover { transform: scale(1.05); }
+        footer { background: var(--dark); color: var(--white); text-align: center; padding: 2rem; margin-top: 4rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div style="font-weight: bold; color: #2563eb;">MyPortfolio.</div>
+        <a href="cisc3003-IndAssgn-home.html">Back to Home</a>
+    </header>
+
+    <div class="container">
+        <h1>Design & Code Gallery</h1>
+        <p style="text-align: center; margin-bottom: 2rem;">Here are some screenshots of UI designs and code snippets from my daily practice.</p>
+        
+        <div class="gallery">
+            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500" alt="Code Showcase 1">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500" alt="Data Chart Showcase">
+            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=500" alt="Workspace Showcase">
+        </div>
+    </div>
+
+    <footer>
+        <p>CISC3003 Web Programming - 2025: [Your Student ID] + [Your Name]</p>
+    </footer>
+
+</body>
+</html>
