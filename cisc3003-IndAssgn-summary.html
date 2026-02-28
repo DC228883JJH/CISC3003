@@ -3,34 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Summary</title>
-    <!-- <link rel="stylesheet" href="css/cisc3003-IndAssgn-summary.css"> -->
+    <title>Summary - JIANGJINHONG Portfolio</title>
     <style>
-        :root { --primary: #2563eb; --dark: #1f2937; --white: #ffffff; }
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; }
-        body { background: #f9fafb; color: var(--dark); padding-top: 80px; }
-        header { background: var(--white); box-shadow: 0 2px 5px rgba(0,0,0,0.1); position: fixed; width: 100%; top: 0; padding: 1rem 5%; display: flex; justify-content: space-between; }
-        .container { max-width: 800px; margin: 2rem auto; padding: 3rem; background: var(--white); border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); text-align: center; }
-        h1 { color: var(--primary); margin-bottom: 1.5rem; }
-        p { font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem; text-align: left;}
-        footer { background: var(--dark); color: var(--white); text-align: center; padding: 2rem; margin-top: 4rem; position: relative; bottom: 0; width: 100%;}
+        :root { --primary: #2563eb; --dark: #1f2937; --light: #f3f4f6; --white: #ffffff; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { color: var(--dark); line-height: 1.6; background-color: var(--light); display: flex; flex-direction: column; min-height: 100vh; }
+        a { text-decoration: none; color: inherit; }
+        
+        header { background: var(--white); box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 1rem 5%; max-width: 1200px; margin: auto; flex-wrap: wrap; }
+        .logo { font-size: 1.5rem; font-weight: bold; color: var(--primary); }
+        .nav-links { list-style: none; display: flex; gap: 1.5rem; flex-wrap: wrap; }
+        .nav-links a { font-weight: 500; transition: color 0.3s; }
+        .nav-links a:hover, .nav-links a.active { color: var(--primary); }
+        
+        main { flex: 1; padding: 3rem 5%; max-width: 800px; margin: auto; width: 100%; }
+        h1.page-title { text-align: center; margin-bottom: 3rem; color: var(--dark); font-size: 2.5rem; border-bottom: 3px solid var(--primary); display: inline-block; padding-bottom: 0.5rem; left: 50%; position: relative; transform: translateX(-50%); }
+        
+        .summary-box { background: var(--white); padding: 2.5rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); margin-bottom: 2rem; }
+        .summary-box h2 { color: var(--primary); margin-bottom: 1rem; }
+        .summary-box p { margin-bottom: 1.5rem; color: #4b5563; }
+        
+        .contact-info { background: var(--light); padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--primary); }
+        .contact-info p { margin-bottom: 0.5rem; font-weight: 500; color: var(--dark); }
+        
+        footer { background: var(--dark); color: var(--white); text-align: center; padding: 1.5rem; margin-top: auto; }
+        
+        @media (max-width: 768px) { nav { flex-direction: column; gap: 1rem; } }
     </style>
 </head>
 <body>
 
     <header>
-        <div style="font-weight: bold; color: #2563eb;">MyPortfolio.</div>
-        <a href="cisc3003-IndAssgn-home.html">Back to Home</a>
+        <nav>
+            <div class="logo">JIANGJINHONG</div>
+            <ul class="nav-links">
+                <li><a href="cisc3003-IndAssgn-home.html">Home</a></li>
+                <li><a href="cisc3003-IndAssgn-qualification.html">Qualifications</a></li>
+                <li><a href="cisc3003-IndAssgn-projects.html">Projects</a></li>
+                <li><a href="cisc3003-IndAssgn-showcase.html">Showcase</a></li>
+                <li><a href="cisc3003-IndAssgn-summary.html" class="active">Summary</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <div class="container">
-        <h1>Career Goals & Summary</h1>
-        <p>As a university student, I have a solid foundation in computer science and a strong desire to learn. Through the CISC3003 course, I have mastered the ability to build professional responsive websites from scratch.</p>
-        <p><strong>Future Plans:</strong> I plan to apply for graduate studies in computer science after graduation. At the same time, I am looking for internship opportunities in front-end or full-stack development to accumulate practical industry experience.</p>
-    </div>
+    <main>
+        <h1 class="page-title">Summary & Contact</h1>
+        
+        <div class="summary-box">
+            <h2>Professional Summary</h2>
+            <p>Thank you for visiting my portfolio. Through my academic journey, I have developed a solid foundation in software development, web technologies, and problem-solving. I am eager to continue learning and applying my skills to real-world challenges.</p>
+            
+            <div class="contact-info">
+                <h2>Get In Touch</h2>
+                <p><strong>Name:</strong> JIANGJINHONG</p>
+                <p><strong>Student ID:</strong> DC228883</p>
+                <p><strong>Email:</strong> DC228883@student.university.edu (Placeholder)</p>
+            </div>
+        </div>
+    </main>
 
     <footer>
-        <p>CISC3003 Web Programming - 2025: [Your Student ID] + [Your Name]</p>
+        <p>&copy; 2026 JIANGJINHONG (Student ID: DC228883). CISC3003 Individual Assignment.</p>
     </footer>
 
 </body>
